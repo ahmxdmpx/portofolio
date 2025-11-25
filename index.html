@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portofolio Ahmad - Mahasiswa IT fokus UI/UX Design dan Web Development">
+  <title>Portofolio Ahmad - UI/UX Designer & Web Developer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#157668',
+            'primary-dark': '#106655',
+          }
+        }
+      }
+    }
+  </script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body class="bg-white text-gray-800 scroll-smooth">
+  <header class="fixed w-full z-50 backdrop-blur-sm bg-white/90 shadow-sm">
+    <nav class="max-w-6xl mx-auto flex justify-between items-center px-6 py-4">
+      <a href="#hero" class="logo text-2xl font-bold text-gray-800">Ahmad's<span class="italic-logo">Portfolio</span></a>
+      <button id="menu-toggle" class="md:hidden text-gray-700 focus:outline-none text-2xl">☰</button>
+      <ul id="menu" class="hidden md:flex flex-col md:flex-row md:space-x-6 text-gray-700 font-medium absolute md:relative top-16 md:top-0 left-0 md:left-auto w-full md:w-auto bg-white md:bg-transparent shadow-md md:shadow-none p-6 md:p-0">
+        <li><a href="#hero" class="block py-2 md:py-0 hover:text-primary transition">Beranda</a></li>
+        <li><a href="#about" class="block py-2 md:py-0 hover:text-primary transition">Tentang</a></li>
+        <li><a href="#skills" class="block py-2 md:py-0 hover:text-primary transition">Keahlian</a></li>
+        <li><a href="#projects" class="block py-2 md:py-0 hover:text-primary transition">Proyek</a></li>
+        <li><a href="#education" class="block py-2 md:py-0 hover:text-primary transition">Pendidikan</a></li>
+        <li><a href="#experience" class="block py-2 md:py-0 hover:text-primary transition">Pengalaman</a></li>
+        <li><a href="#certificates" class="block py-2 md:py-0 hover:text-primary transition">Sertifikat</a></li>
+        <li><a href="#contact" class="block py-2 md:py-0 hover:text-primary transition">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero" class="relative pt-40 pb-32 text-center px-4 min-h-screen flex items-center justify-center">
+      <div class="relative z-10 hero-content">
+        <h1 class="text-4xl sm:text-5xl md:text-7xl font-bold mb-6 leading-tight">
+          Saya <span id="typing-text" class="text-primary"></span><span class="typing-cursor">|</span>
+        </h1>
+        <p class="text-gray-600 max-w-2xl mx-auto mb-10 text-base sm:text-lg md:text-xl leading-relaxed">
+          Saya seorang mahasiswa IT yang fokus pada desain UI/UX dan pengembangan web.
+        </p>
+        <a href="assets/CV-Ahmad.pdf" download class="cta-button inline-flex items-center gap-2 bg-primary text-white px-8 py-4 rounded-full hover:bg-primary-dark transition-all duration-500 font-medium text-lg shadow-lg hover:shadow-xl hover:scale-105">
+          <span>Unduh CV</span>
+          <i data-lucide="download" class="w-5 h-5"></i>
+        </a>
+      </div>
+    </section>
+
+    <section id="about" class="max-w-6xl mx-auto py-20 px-4 sm:px-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <img src="https://via.placeholder.com/250" alt="Foto Ahmad" class="rounded-2xl shadow-lg w-64 h-64 object-cover mx-auto md:mx-0">
+        <div>
+          <h2 class="section-title">Tentang Saya</h2>
+          <p class="text-gray-700 leading-relaxed mb-4">
+            Halo! Saya <span class="font-semibold">Ahmad</span>, seorang mahasiswa Teknologi Informasi yang bersemangat dalam dunia <span class="text-primary font-medium">UI/UX Design</span> dan <span class="text-primary font-medium">Web Development</span>.
+          </p>
+          <p class="text-gray-700 leading-relaxed">
+            Saat ini saya memperdalam kemampuan di bidang Front-End Development menggunakan HTML, CSS, JavaScript, dan Tailwind CSS.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="bg-gray-50 py-20 px-6">
+      <div class="max-w-6xl mx-auto text-center mb-12">
+        <h2 class="section-title">Keahlian</h2>
+        <p class="section-subtitle">Kemampuan utama yang saya miliki di bidang teknologi, komunikasi, dan desain.</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <div class="bg-white rounded-2xl shadow-md p-6 card-hover">
+          <h3 class="text-xl font-semibold text-primary mb-6 flex items-center gap-2">
+            <i data-lucide="laptop-minimal" class="w-5 h-5"></i>Hard Skill
+          </h3>
+          <div class="space-y-5">
+            <div>
+              <div class="flex justify-between text-gray-700 text-sm font-medium mb-2"><span>HTML, CSS, JS</span><span>90%</span></div>
+              <div class="w-full bg-gray-200 h-2 rounded-full overflow-hidden"><div class="skill-bar h-2 rounded-full" data-width="90"></div></div>
+            </div>
+            <div>
+              <div class="flex justify-between text-gray-700 text-sm font-medium mb-2"><span>Tailwind CSS</span><span>85%</span></div>
+              <div class="w-full bg-gray-200 h-2 rounded-full overflow-hidden"><div class="skill-bar h-2 rounded-full" data-width="85"></div></div>
+            </div>
+            <div>
+              <div class="flex justify-between text-gray-700 text-sm font-medium mb-2"><span>Networking Basics</span><span>75%</span></div>
+              <div class="w-full bg-gray-200 h-2 rounded-full overflow-hidden"><div class="skill-bar h-2 rounded-full" data-width="75"></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="bg-white rounded-2xl shadow-md p-6 card-hover">
+          <h3 class="text-xl font-semibold text-primary mb-6 flex items-center gap-2">
+            <i data-lucide="lightbulb" class="w-5 h-5"></i>Soft Skill
+          </h3>
+          <div class="space-y-5">
+            <div>
+              <div class="flex justify-between text-gray-700 text-sm font-medium mb-2"><span>Komunikasi Efektif</span><span>80%</span></div>
+              <div class="w-full bg-gray-200 h-2 rounded-full overflow-hidden"><div class="skill-bar h-2 rounded-full" data-width="80"></div></div>
+            </div>
+            <div>
+              <div class="flex justify-between text-gray-700 text-sm font-medium mb-2"><span>Kerjasama Tim</span><span>85%</span></div>
+              <div class="w-full bg-gray-200 h-2 rounded-full overflow-hidden"><div class="skill-bar h-2 rounded-full" data-width="85"></div></div>
+            </div>
+            <div>
+              <div class="flex justify-between text-gray-700 text-sm font-medium mb-2"><span>Manajemen Waktu</span><span>75%</span></div>
+              <div class="w-full bg-gray-200 h-2 rounded-full overflow-hidden"><div class="skill-bar h-2 rounded-full" data-width="75"></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="bg-white rounded-2xl shadow-md p-6 card-hover">
+          <h3 class="text-xl font-semibold text-primary mb-6 flex items-center gap-2">
+            <i data-lucide="palette" class="w-5 h-5"></i>Design Skill
+          </h3>
+          <div class="space-y-5">
+            <div>
+              <div class="flex justify-between text-gray-700 text-sm font-medium mb-2"><span>UI/UX Design (Figma)</span><span>80%</span></div>
+              <div class="w-full bg-gray-200 h-2 rounded-full overflow-hidden"><div class="skill-bar h-2 rounded-full" data-width="80"></div></div>
+            </div>
+            <div>
+              <div class="flex justify-between text-gray-700 text-sm font-medium mb-2"><span>Prototyping & Wireframing</span><span>85%</span></div>
+              <div class="w-full bg-gray-200 h-2 rounded-full overflow-hidden"><div class="skill-bar h-2 rounded-full" data-width="85"></div></div>
+            </div>
+            <div>
+              <div class="flex justify-between text-gray-700 text-sm font-medium mb-2"><span>Visual Composition</span><span>75%</span></div>
+              <div class="w-full bg-gray-200 h-2 rounded-full overflow-hidden"><div class="skill-bar h-2 rounded-full" data-width="75"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="py-20 px-6">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-12">
+          <h2 class="section-title">Proyek Saya</h2>
+          <p class="section-subtitle">Beberapa proyek yang telah saya kerjakan dalam bidang UI/UX Design dan Web Development</p>
+        </div>
+        <div class="flex flex-wrap justify-center gap-3 mb-12">
+          <button class="filter-btn active px-6 py-2 rounded-full bg-white text-gray-700 font-medium" data-filter="all">Semua</button>
+          <button class="filter-btn px-6 py-2 rounded-full bg-white text-gray-700 font-medium" data-filter="web">Web Development</button>
+          <button class="filter-btn px-6 py-2 rounded-full bg-white text-gray-700 font-medium" data-filter="design">UI/UX Design</button>
+          <button class="filter-btn px-6 py-2 rounded-full bg-white text-gray-700 font-medium" data-filter="network">Networking</button>
+        </div>
+        <div id="projects-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"></div>
+        <div class="text-center mt-12">
+          <button id="view-more-projects-btn" class="view-more-btn">
+            <span id="projects-btn-text">Lihat Lebih Banyak</span>
+            <i data-lucide="chevron-down" id="projects-arrow-icon" class="w-5 h-5 arrow-rotate"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="bg-gray-50 py-20 px-6">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-12">
+          <h2 class="section-title">Pendidikan</h2>
+          <p class="section-subtitle">Riwayat pendidikan formal saya</p>
+        </div>
+        <div id="education-container" class="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-5xl mx-auto"></div>
+        <div class="text-center mt-12">
+          <button id="view-more-education-btn" class="view-more-btn" style="display: none;">
+            <span id="education-btn-text">Lihat Lebih Banyak</span>
+            <i data-lucide="chevron-down" id="education-arrow-icon" class="w-5 h-5 arrow-rotate"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="py-20 px-6">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-12">
+          <h2 class="section-title">Pengalaman</h2>
+          <p class="section-subtitle">Pengalaman kerja dan magang profesional</p>
+        </div>
+        <div id="experience-container" class="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-5xl mx-auto"></div>
+        <div class="text-center mt-12">
+          <button id="view-more-experience-btn" class="view-more-btn" style="display: none;">
+            <span id="experience-btn-text">Lihat Lebih Banyak</span>
+            <i data-lucide="chevron-down" id="experience-arrow-icon" class="w-5 h-5 arrow-rotate"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="certificates" class="bg-gray-50 py-20 px-6">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-12">
+          <h2 class="section-title">Sertifikat</h2>
+          <p class="section-subtitle">Beberapa sertifikat yang pernah saya peroleh</p>
+        </div>
+        <div id="certificates-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto"></div>
+        <div class="text-center mt-12">
+          <button id="view-more-certificates-btn" class="view-more-btn">
+            <span id="certificates-btn-text">Lihat Lebih Banyak</span>
+            <i data-lucide="chevron-down" id="certificates-arrow-icon" class="w-5 h-5 arrow-rotate"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="py-20 px-6 text-center">
+      <h2 class="section-title">Kontak</h2>
+      <p class="section-subtitle mb-8">Tertarik untuk berkolaborasi atau ingin berdiskusi? Hubungi saya melalui:</p>
+      <div class="flex flex-col md:flex-row justify-center gap-6 items-center">
+        <a href="mailto:helloahmadhere@gmail.com" class="flex items-center gap-2 text-primary hover:text-primary-dark transition-all p-3 rounded-lg group">
+          <i data-lucide="mail" class="w-5 h-5"></i> helloahmadhere@gmail.com
+        </a>
+        <a href="https://linkedin.com/in/ahmad" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 text-primary hover:text-primary-dark transition-all p-3 rounded-lg group">
+          <i data-lucide="linkedin" class="w-5 h-5"></i> LinkedIn
+        </a>
+        <a href="https://github.com/ahmad" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 text-primary hover:text-primary-dark transition-all p-3 rounded-lg group">
+          <i data-lucide="github" class="w-5 h-5"></i> GitHub
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-gray-200 py-6 text-center text-sm text-gray-500">
+    <p>&copy; 2025 Ahmad. All rights reserved.</p>
+    <p>Designed with passion and precision</p>
+  </footer>
+
+   <!-- PROJECT MODAL -->
+  <div id="project-modal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden items-center justify-center p-4 modal-base">
+    <div class="bg-white rounded-2xl max-w-3xl w-full max-h-[90vh] overflow-y-auto">
+      <div class="sticky top-0 bg-white border-b border-gray-200 px-6 py-4 flex items-center justify-between z-10">
+        <h3 id="modal-title" class="text-2xl font-bold text-gray-800"></h3>
+        <button id="close-modal" class="text-gray-500 hover:text-gray-700"><i data-lucide="x" class="w-6 h-6"></i></button>
+      </div>
+      <div class="p-6">
+        <img id="modal-image" src="" alt="" class="w-full h-64 object-cover rounded-xl mb-6">
+        <div id="modal-tags" class="mb-4"></div>
+        <div class="space-y-4">
+          <div>
+            <h4 class="font-semibold text-gray-800 mb-2 flex items-center gap-2"><i data-lucide="file-text" class="w-5 h-5 text-primary"></i>Deskripsi</h4>
+            <p id="modal-description" class="text-gray-600 leading-relaxed"></p>
+          </div>
+          <div>
+            <h4 class="font-semibold text-gray-800 mb-2 flex items-center gap-2"><i data-lucide="tool" class="w-5 h-5 text-primary"></i>Teknologi</h4>
+            <div id="modal-tech" class="flex flex-wrap gap-2"></div>
+          </div>
+          <div>
+            <h4 class="font-semibold text-gray-800 mb-2 flex items-center gap-2"><i data-lucide="check-circle" class="w-5 h-5 text-primary"></i>Fitur Utama</h4>
+            <ul id="modal-features" class="list-disc list-inside text-gray-600 space-y-1"></ul>
+          </div>
+          <div class="flex gap-4 pt-4">
+            <a id="modal-demo-link" href="#" target="_blank" class="flex-1 flex items-center justify-center gap-2 bg-primary text-white px-6 py-3 rounded-lg hover:bg-primary-dark transition-colors">
+              <i data-lucide="external-link" class="w-5 h-5"></i>Live Demo
+            </a>
+            <a id="modal-github-link" href="#" target="_blank" class="flex-1 flex items-center justify-center gap-2 border-2 border-primary text-primary px-6 py-3 rounded-lg hover:bg-primary hover:text-white transition-colors">
+              <i data-lucide="github" class="w-5 h-5"></i>GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CERTIFICATE MODAL -->
+  <div id="certificate-modal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden items-center justify-center p-4 modal-base">
+    <div class="bg-white rounded-2xl max-w-3xl w-full max-h-[90vh] overflow-y-auto">
+      <div class="sticky top-0 bg-white border-b border-gray-200 px-6 py-4 flex items-center justify-between z-10">
+        <h3 id="cert-modal-title" class="text-2xl font-bold text-gray-800"></h3>
+        <button id="close-cert-modal" class="text-gray-500 hover:text-gray-700"><i data-lucide="x" class="w-6 h-6"></i></button>
+      </div>
+      <div class="p-6">
+        <img id="cert-modal-image" src="" alt="" class="w-full h-auto object-contain rounded-xl mb-6">
+        <div class="space-y-4">
+          <div>
+            <h4 class="font-semibold text-gray-800 mb-2 flex items-center gap-2"><i data-lucide="award" class="w-5 h-5 text-primary"></i>Informasi Sertifikat</h4>
+            <p id="cert-modal-issuer" class="text-gray-600"></p>
+            <p id="cert-modal-date" class="text-gray-500 text-sm mt-1"></p>
+          </div>
+          <div>
+            <h4 class="font-semibold text-gray-800 mb-2 flex items-center gap-2"><i data-lucide="file-text" class="w-5 h-5 text-primary"></i>Deskripsi</h4>
+            <p id="cert-modal-description" class="text-gray-600 leading-relaxed"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- EXPERIENCE MODAL -->
+  <div id="experience-modal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden items-center justify-center p-4 modal-base">
+    <div class="bg-white rounded-2xl max-w-3xl w-full max-h-[90vh] overflow-y-auto">
+      <div class="sticky top-0 bg-white border-b border-gray-200 px-6 py-4 flex items-center justify-between z-10">
+        <h3 id="exp-modal-title" class="text-2xl font-bold text-gray-800"></h3>
+        <button id="close-exp-modal" class="text-gray-500 hover:text-gray-700"><i data-lucide="x" class="w-6 h-6"></i></button>
+      </div>
+      <div class="p-6">
+        <img id="exp-modal-image" src="" alt="" class="w-full h-64 object-cover rounded-xl mb-6">
+        <div id="exp-modal-tags" class="mb-4"></div>
+        <div class="space-y-4">
+          <div>
+            <h4 class="font-semibold text-gray-800 mb-2 flex items-center gap-2"><i data-lucide="briefcase" class="w-5 h-5 text-primary"></i>Periode</h4>
+            <p id="exp-modal-date" class="text-gray-600"></p>
+          </div>
+          <div>
+            <h4 class="font-semibold text-gray-800 mb-2 flex items-center gap-2"><i data-lucide="file-text" class="w-5 h-5 text-primary"></i>Deskripsi</h4>
+            <p id="exp-modal-description" class="text-gray-600 leading-relaxed"></p>
+          </div>
+          <div>
+            <h4 class="font-semibold text-gray-800 mb-2 flex items-center gap-2"><i data-lucide="check-circle" class="w-5 h-5 text-primary"></i>Tanggung Jawab</h4>
+            <ul id="exp-modal-responsibilities" class="list-disc list-inside text-gray-600 space-y-1"></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- EDUCATION MODAL -->
+  <div id="education-modal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden items-center justify-center p-4 modal-base">
+    <div class="bg-white rounded-2xl max-w-3xl w-full max-h-[90vh] overflow-y-auto">
+      <div class="sticky top-0 bg-white border-b border-gray-200 px-6 py-4 flex items-center justify-between z-10">
+        <h3 id="edu-modal-title" class="text-2xl font-bold text-gray-800"></h3>
+        <button id="close-edu-modal" class="text-gray-500 hover:text-gray-700"><i data-lucide="x" class="w-6 h-6"></i></button>
+      </div>
+      <div class="p-6">
+        <img id="edu-modal-image" src="" alt="" class="w-full h-64 object-cover rounded-xl mb-6">
+        <div class="space-y-4">
+          <div>
+            <h4 class="font-semibold text-gray-800 mb-2 flex items-center gap-2"><i data-lucide="graduation-cap" class="w-5 h-5 text-primary"></i>Program Studi</h4>
+            <p id="edu-modal-major" class="text-gray-600"></p>
+          </div>
+          <div>
+            <h4 class="font-semibold text-gray-800 mb-2 flex items-center gap-2"><i data-lucide="calendar" class="w-5 h-5 text-primary"></i>Periode</h4>
+            <p id="edu-modal-date" class="text-gray-600"></p>
+          </div>
+          <div>
+            <h4 class="font-semibold text-gray-800 mb-2 flex items-center gap-2"><i data-lucide="file-text" class="w-5 h-5 text-primary"></i>Deskripsi</h4>
+            <p id="edu-modal-description" class="text-gray-600 leading-relaxed"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
